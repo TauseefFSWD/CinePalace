@@ -1,0 +1,77 @@
+/* About.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Ensure the entire page background is dark */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+    padding: 20px;
+    background-color: #121212; /* Dark background to match the movie theme */
+    color: #fff;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #e67e22; /* Golden color for headers */
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+strong {
+    color: #e67e22; /* Highlight important text with the golden color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul li {
+        font-size: 0.9rem;
+    }
+
+    .about-container {
+        padding: 15px;
+    }
+    .creator-info {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #e67e22; /* Highlight creator info in golden color */
+        text-align: center;
+        border-top: 1px solid #e67e22;
+        padding-top: 20px;
+    }
+}

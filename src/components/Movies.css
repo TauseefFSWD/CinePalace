@@ -1,0 +1,101 @@
+/* Movies.css */
+
+.movies-container {
+    padding: 20px;
+    background-color: #121212; /* Dark background to match the theme */
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e67e22; /* Golden color */
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .movie-section {
+    margin-bottom: 40px;
+  }
+  
+  .movie-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e67e22; /* Golden color for section titles */
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 movies per row */
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: 450px; /* Increased height for larger images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff; /* Text color */
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #bbb; /* Light gray for less prominent text */
+  }
+  
+  .watch-trailer-button,
+  .rent-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .watch-trailer-button {
+    background-color: #f39c12; /* Golden color */
+  }
+  
+  .watch-trailer-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .rent-button {
+    background-color: #28a745; /* Green color */
+  }
+  
+  .rent-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .movies-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 movies per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movies-grid {
+      grid-template-columns: 1fr; /* 1 movie per row on very small screens */
+    }
+  }
+  

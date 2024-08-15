@@ -1,0 +1,59 @@
+/* Navbar.css */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9); /* Dark background for a cinematic feel */
+    padding: 15px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    color: #f39c12; /* Gold color for movie theme */
+    margin: 0;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu a:hover {
+    color: #f39c12; /* Gold color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar-menu a {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,188 @@
+/* Home.css */
+
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-header h1 {
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.movies-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-section {
+  margin-bottom: 20px;
+}
+
+.movie-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color:#e67e22
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-details h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.movie-details p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.play-button 
+{
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.play-button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .home-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logout-button {
+    margin-top: 10px;
+  }
+}
+.rent-button {
+  background-color: #28a745;
+
+  color: #fff;
+  border: none;
+  margin-top: 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.rent-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+/* Home.css */
+
+.play-button, /* Ensure consistency with existing button */
+.rent-button, 
+.watch-trailer-button { /* Added for consistency */
+  background-color: #f39c12; /* Golden color for watch-trailer */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block; /* Ensure they are of inline block for consistent size */
+  text-align: center; /* Center text inside button */
+}
+
+.play-button:hover, 
+.rent-button:hover, 
+.watch-trailer-button:hover { /* Added for consistency */
+  background-color: #e67e22; /* Hover color for buttons */
+  transform: scale(1.05);
+}
+
+.rent-button {
+  background-color: #28a745; /* Green color for rent */
+}
+
+.rent-button:hover {
+  background-color: #218838;
+}
+
+/* Adjust button sizes if needed */
+.play-button, 
+.rent-button, 
+.watch-trailer-button {
+  width: auto; /* Auto width to adjust to text */
+  height: auto; /* Auto height to adjust to text */
+  padding: 10px 20px; /* Consistent padding */
+}
